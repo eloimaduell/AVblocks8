@@ -1,0 +1,240 @@
+<Widget>
+    <Kind>2</Kind>
+    <Name>FULLSCREEN</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>masterPower</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>isPlayingSAW</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>isPlayingTRI</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>isPlayingSQU</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>isPlayingPULSE</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>isPlayingNOISE</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>isPlayingSINBUF</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kPWM</Name>
+    <Value>0.546875000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kPanSAW</Name>
+    <Value>-7.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kPanTRI</Name>
+    <Value>1.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kPanSQU</Name>
+    <Value>1.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kPanPULSE</Name>
+    <Value>1.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kPanNOISE</Name>
+    <Value>1.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kPanSINBUF</Name>
+    <Value>1.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kVolSIN</Name>
+    <Value>110.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kVolSAW</Name>
+    <Value>110.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kVolTRI</Name>
+    <Value>110.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kVolSQU</Name>
+    <Value>110.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kVolPULSE</Name>
+    <Value>110.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kVolNOISE</Name>
+    <Value>110.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kHarmSIN</Name>
+    <Value>1.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kHarmSAW</Name>
+    <Value>2.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kHarmTRI</Name>
+    <Value>3.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kHarmSQU</Name>
+    <Value>4.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kHarmPULSE</Name>
+    <Value>5.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>A1</Name>
+    <Value>0.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>D1</Name>
+    <Value>0.100000001</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>S1</Name>
+    <Value>1.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>R1</Name>
+    <Value>0.500000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>A2</Name>
+    <Value>0.100000001</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>D2</Name>
+    <Value>0.100000001</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>S2</Name>
+    <Value>0.500000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>R2</Name>
+    <Value>0.500000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kEnv2ToFilter</Name>
+    <Value>0.799999952</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>isFilter1Playing</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kFilter1Frequency</Name>
+    <Value>0.200000003</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kFilter1Resonance</Name>
+    <Value>0.200000003</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>isLfoPlaying</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kWaveformLfo</Name>
+    <Value>1.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kReverbRoomSize</Name>
+    <Value>0.649999976</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kReverbDamp</Name>
+    <Value>0.100000001</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kReverbWet</Name>
+    <Value>0.300000012</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>isPlayingREVERB</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>kReverbwidth</Name>
+    <Value>0.990000010</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>setPlayDistor</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>setLevelDistor</Name>
+    <Value>4.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>5</Kind>
+    <Name>setGainDistor</Name>
+    <Value>0.899999976</Value>
+</Widget>

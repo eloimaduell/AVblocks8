@@ -1,0 +1,42 @@
+<group>
+	<masterPower>1</masterPower>
+	<isPlayingSAW>1</isPlayingSAW>
+	<isPlayingTRI>1</isPlayingTRI>
+	<isPlayingSQU>1</isPlayingSQU>
+	<isPlayingPULSE>1</isPlayingPULSE>
+	<isPlayingNOISE>1</isPlayingNOISE>
+	<isPlayingSINBUF>1</isPlayingSINBUF>
+	<kPanSAW>64</kPanSAW>
+	<kPanTRI>1</kPanTRI>
+	<kPanSQU>5.76</kPanSQU>
+	<kPanPULSE>1</kPanPULSE>
+	<kPanNOISE>1</kPanNOISE>
+	<kPanSINBUF>1</kPanSINBUF>
+	<kVolSIN>110</kVolSIN>
+	<kVolSAW>74.93</kVolSAW>
+	<kVolTRI>60.96</kVolTRI>
+	<kVolSQU>54.61</kVolSQU>
+	<kVolPULSE>50.165</kVolPULSE>
+	<kPWM>0.5</kPWM>
+	<kVolNOISE>20.32</kVolNOISE>
+	<kHarmSIN>16</kHarmSIN>
+	<kHarmSAW>2</kHarmSAW>
+	<kHarmTRI>3</kHarmTRI>
+	<kHarmSQU>4</kHarmSQU>
+	<kHarmPULSE>5</kHarmPULSE>
+	<A1>0.1</A1>
+	<D1>0.1</D1>
+	<S1>1</S1>
+	<R1>0.5</R1>
+	<A2>0.09</A2>
+	<D2>0.5</D2>
+	<S2>0.5</S2>
+	<R2>0.69</R2>
+	<kEnv2ToFilter>0.5</kEnv2ToFilter>
+	<isFilter1Playing>1</isFilter1Playing>
+	<kFilter1Frequency>0.17</kFilter1Frequency>
+	<kFilter1Resonance>0.295</kFilter1Resonance>
+	<setPlaySAMPLER>0</setPlaySAMPLER>
+	<LoopMode>1</LoopMode>
+<group/>
+</group>
