@@ -678,8 +678,7 @@ void testApp::setupGUIs()
     distorModes.push_back("ARC");
     distorModes.push_back("TAN");
     distorModes.push_back("HYP");
-    ofxUIRadio* DistorModes = new ofxUIRadio("MODE",distorModes ,OFX_UI_ORIENTATION_HORIZONTAL, dim, dim);
-    // guiDISTOR->addWidgetDown(new ofxUILabel("Mode", OFX_UI_FONT_SMALL));
+    ofxUIRadio* DistorModes = new ofxUIRadio("DISTORMODE",distorModes ,OFX_UI_ORIENTATION_HORIZONTAL, dim, dim);
     guiDISTOR->addWidgetDown(DistorModes);
     guiDISTOR->addSpacer(0,5);
     guiDISTOR->addWidgetDown(new ofxUIRotarySlider( dim*5, 1, 100, 4, "LEVEL", OFX_UI_FONT_SMALL));
@@ -870,7 +869,7 @@ void testApp::fxsetGainDistor(float &_value){mysynth.setParam(212,setGainDistor)
 
 void testApp::fxsetDistorMode(int &_value){
     mysynth.setParam(213,setDistorMode);
-    ofxUIRadio *d = (ofxUIRadio *) guiDISTOR->getWidget("MODE"); setDistorMode=(d->whichIsTrue());
+    ofxUIRadio *d = (ofxUIRadio *) guiDISTOR->getWidget("DISTORMODE"); setDistorMode=(d->whichIsTrue());
 }
 
 
@@ -1063,12 +1062,12 @@ void testApp::guiEvent(ofxUIEventArgs &e)
         if(e.widget->getName() == "DISTORSION") {ofxUIToggle *toggle = (ofxUIToggle *) e.widget;setPlayDistor= (toggle->getValue());}
         else if(e.widget->getName() == "LEVEL") {ofxUIRotarySlider *rotary = (ofxUIRotarySlider *) e.widget;setLevelDistor= (rotary->getScaledValue());}
         else if(e.widget->getName() == "GAIN") {ofxUIRotarySlider *rotary = (ofxUIRotarySlider *) e.widget;setGainDistor= (rotary->getValue());}
-        else if(e.widget->getName() == "MODE")
-        {
-            ofxUIRadio *distorMode = (ofxUIRadio *) e.widget;
-            int w = distorMode->whichIsTrue();
-            setDistorMode= w;
-        }
+    }
+    else if(e.widget->getParent()->getName()=="DISTORMODE")
+    {
+        ofxUIRadio *distorMode = (ofxUIRadio *) e.widget->getParent();
+        int w = distorMode->whichIsTrue();
+        setDistorMode= w;
         
     }
     else if(e.widget->getParent()->getName()=="LFO")
