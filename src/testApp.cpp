@@ -713,7 +713,7 @@ void testApp::setupGUIs()
     lfoWaveformList.push_back("SQU");
     lfoWaveformList.push_back("PUL");
     lfoWaveformList.push_back("NOS");
-    ofxUIRadio* lfoWaves = new ofxUIRadio("WAVEFORM",lfoWaveformList ,OFX_UI_ORIENTATION_VERTICAL, dim, dim);
+    ofxUIRadio* lfoWaves = new ofxUIRadio("LFOWAVEFORM",lfoWaveformList ,OFX_UI_ORIENTATION_VERTICAL, dim, dim);
     guiLFO1->addLabel("WAVEFORM");
     guiLFO1->addSpacer();
     guiLFO1->addWidgetDown(lfoWaves);
@@ -1080,15 +1080,16 @@ void testApp::guiEvent(ofxUIEventArgs &e)
             int w = lfoModeRadio->whichIsTrue();
             kLFOmode= w;
         }
-        else if(e.widget->getName() == "WAVEFORM")
-        {
-            ofxUIRadio *lfoWaveformRadio = (ofxUIRadio *) e.widget;
-            int w = lfoWaveformRadio->whichIsTrue();
-            kWaveformLfo= w;
-        }
         else if(e.widget->getName()== "FIXED FREQ"){ofxUISlider *s = (ofxUISlider *) e.widget; kLFOfreq = (s->getValue());}
         
     }
+    else if(e.widget->getParent()->getName() == "LFOWAVEFORM")
+    {
+        ofxUIRadio *lfoWaveformRadio = (ofxUIRadio *) e.widget->getParent();
+        int w = lfoWaveformRadio->whichIsTrue();
+        kWaveformLfo= w;
+    }
+
     
     /// GUI SETTINGS
     if(e.widget->getName() == "FULLSCREEN")
