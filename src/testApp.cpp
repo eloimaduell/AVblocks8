@@ -223,11 +223,11 @@ void testApp::keyPressed  (int key){
     
     switch (key)
     {
-        case 'a': mysynth.note_on(34, 80);break;
-        case 's': mysynth.note_on(37, 90);break;
-        case 'd': mysynth.note_on(39, 100);break;
-        case 'f': mysynth.note_on(40, 110);break;
-        case 'g': mysynth.note_on(41, 110);break;
+        case 'a': if(!keyIsPressed)mysynth.note_on(34, 80);break;
+        case 's': if(!keyIsPressed)mysynth.note_on(37, 90);break;
+        case 'd': if(!keyIsPressed)mysynth.note_on(39, 100);break;
+        case 'f': if(!keyIsPressed)mysynth.note_on(40, 110);break;
+        case 'g': if(!keyIsPressed)mysynth.note_on(41, 110);break;
             
     }
     
@@ -442,7 +442,6 @@ void testApp::setupGUIs()
     {
         //audioDeviceList.push_back(avSoundStream.getDeviceName(i));
         audioDeviceList.push_back(ofToString("AudioOut ") +ofToString(i) + " : "  +ofToString(avSoundStream.getDeviceName(i)));
-        printf(" init setting audio device list > %s",avSoundStream.getDeviceName(i).c_str());
     }
     ofxUIRadio* audioOutDevices = new ofxUIRadio("AUDIOOUTDEVICE",audioDeviceList ,OFX_UI_ORIENTATION_VERTICAL, dim, dim);
     audioOutDevices->setWhichToTrue(3);
