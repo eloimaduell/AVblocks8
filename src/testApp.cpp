@@ -880,7 +880,7 @@ void testApp::fxsetDistorMode(int &_value){
 //----------------------------------------------------------------------------------------------------
 void testApp::guiEvent(ofxUIEventArgs &e)
 {
-     cout <<"guiEvent ... name : " << e.widget->getName() << " parent : " << e.widget->getParent()->getName()<<endl;
+     if(ofGetLogLevel()==OF_LOG_VERBOSE) cout <<"guiEvent ... name : " << e.widget->getName() << " parent : " << e.widget->getParent()->getName()<<endl;
     
     
     if(e.widget->getParent()->getName()=="GLOBALS")
