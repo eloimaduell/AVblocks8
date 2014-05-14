@@ -658,7 +658,7 @@ void testApp::setupGUIs()
     guiFILTER1->addWidgetDown(new ofxUIToggle(dim*2, dim,true, "LOWPASS"));
     guiFILTER1->addSpacer(0,2);
     guiFILTER1->addWidgetDown(new ofxUIRotarySlider( dim*5, 0.f, 1.f, .2f, "CUTOFF", OFX_UI_FONT_SMALL));
-    guiFILTER1->addWidgetRight(new ofxUIRotarySlider( dim*5, 0.f, 1.f, .2f, "  RES", OFX_UI_FONT_SMALL));
+    guiFILTER1->addWidgetRight(new ofxUIRotarySlider( dim*5, 0.f, 1.f, .2f, "RES", OFX_UI_FONT_SMALL));
     
     ofAddListener(guiFILTER1->newGUIEvent, this, &testApp::guiEvent);
     

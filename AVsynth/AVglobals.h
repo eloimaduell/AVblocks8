@@ -24,7 +24,7 @@
 #endif
 
 #ifndef BUFFER_SIZE
-#define BUFFER_SIZE 128 // very low latency !!
+#define BUFFER_SIZE 512 // very low latency !!
 #endif
 
 #ifndef NUMBER_OF_VOICES
